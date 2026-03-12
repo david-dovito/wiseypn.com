@@ -368,6 +368,15 @@ section:nth-child(even) { background: var(--light-gray); }
   color: var(--text-light);
 }
 
+.membership-price-alt {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-light);
+  margin-top: -16px;
+  margin-bottom: 24px;
+}
+
 .membership-perks {
   list-style: none;
   margin-bottom: 28px;
