@@ -306,6 +306,96 @@ section:nth-child(even) { background: var(--light-gray); }
   margin-bottom: 16px;
 }
 
+/* ---- MEMBERSHIP ---- */
+.membership-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.membership-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 36px 32px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  text-align: left;
+  position: relative;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.membership-card.featured {
+  border-color: var(--teal);
+}
+
+.membership-badge {
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  background: var(--teal);
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.membership-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.membership-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 24px;
+}
+
+.membership-price span {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.membership-perks {
+  list-style: none;
+  margin-bottom: 28px;
+  flex-grow: 1;
+}
+
+.membership-perks li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  font-size: 0.9375rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+.membership-perks li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.membership-card .btn {
+  text-align: center;
+  width: 100%;
+}
+
 /* ---- FOUNDERS ---- */
 .founders-grid {
   display: grid;
@@ -505,6 +595,7 @@ section:nth-child(even) { background: var(--light-gray); }
 
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
   .events-grid { grid-template-columns: 1fr; }
+  .membership-grid { grid-template-columns: 1fr; }
   .founders-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
 
   .footer-inner { flex-direction: column; text-align: center; align-items: center; }

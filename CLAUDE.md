@@ -14,6 +14,9 @@
 - `index.html` - Single page landing site
 - `styles.css` - All styles
 - `images/` - Logo, event photos, founder headshots
+- `images/sponsors/` - 9 sponsor logos
+- `images/dovito-white.png` - White Dovito logo for footer credit
+- `.gitignore` / `package.json` - Vercel analytics dependency
 
 ## Sections
 1. Nav (logo + Join Now + anchor links)
@@ -25,6 +28,8 @@
 7. Footer (social icons + links)
 
 ## Notes
-- Keep it lean. No build step. No dependencies.
-- Sponsor section will be activated later with real logos.
+- Keep it lean. No build step. Static HTML served directly.
+- Vercel Analytics via built-in script (`/_vercel/insights/script.js`), not bundled.
+- 9 sponsors active with logo grid.
 - Events link to Windsor Chamber system, not custom pages.
+- Footer has "site by dovito(R)" linking to dovito.com with inline white logo.
