@@ -269,6 +269,20 @@ section:nth-child(even) { background: var(--light-gray); }
   padding: 28px;
 }
 
+.event-freq {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  background: rgba(45,43,85,0.08);
+  color: var(--navy);
+}
+
 .event-card-body h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
